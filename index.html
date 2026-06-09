@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Web Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello World</h1>
-  <p>This is my first website.</p>
+  <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="https://picsum.photos/100/100?random=1" alt="Website logo" />
+        <span>My Web Page</span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#grid-section">Grid Gallery</a></li>
+        <li><a href="#flex-section">Flex Gallery</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to My First Web Page</h1>
+        <p>
+          This is a simple practice website built with HTML, CSS, and JavaScript.
+          It demonstrates basic layout techniques using Grid and Flexbox.
+        </p>
+        <a class="btn" href="#about">Explore More</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container card">
+        <h2>About This Page</h2>
+        <p>
+          Today I learn about HTML and CSS in Coursera by FPTU. This version is
+          rewritten with a cleaner layout, better spacing, and responsive design.
+        </p>
+      </div>
+    </section>
+
+    <section id="grid-section" class="section">
+      <div class="container card">
+        <h2>Grid Gallery</h2>
+        <p class="section-text">
+          This section uses CSS Grid to display images in a neat layout.
+        </p>
+        <div class="grid-gallery">
+          <img src="https://picsum.photos/300/200?random=2" alt="Landscape image one" />
+          <img src="https://picsum.photos/300/200?random=3" alt="Landscape image two" />
+          <img src="https://picsum.photos/300/200?random=4" alt="Landscape image three" />
+          <img src="https://picsum.photos/300/200?random=5" alt="Landscape image four" />
+        </div>
+      </div>
+    </section>
+
+    <section id="flex-section" class="section">
+      <div class="container card">
+        <h2>Flex Gallery</h2>
+        <p class="section-text">
+          This section uses Flexbox to arrange images in a flexible row.
+        </p>
+        <div class="flex-gallery">
+          <img src="https://picsum.photos/200/150?random=6" alt="Flex gallery image one" />
+          <img src="https://picsum.photos/200/150?random=7" alt="Flex gallery image two" />
+          <img src="https://picsum.photos/200/150?random=8" alt="Flex gallery image three" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My First Web Page</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
